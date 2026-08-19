@@ -24,16 +24,10 @@
     <groupId>io.artifexlabs.inventory</groupId>
     <artifactId>inventory-parent</artifactId>
     <version>1-SNAPSHOT</version>
+    <relativePath/>
   </parent>
   <artifactId>inventory-impl</artifactId>
   <version>0.1.0-SNAPSHOT</version>
-  <properties>
-    <!-- inventory-parent (which defines this) now lives OUTSIDE the
-         workspace, and Quarkus's bootstrap resolves workspace module
-         versions from raw poms — so ${revision} must be resolvable here.
-         -Drevision=X.Y.Z on the command line still overrides it. -->
-    <revision>0.1.0-SNAPSHOT</revision>
-  </properties>
   <name>${project.artifactId}</name>
   <description>Default implementations for the inventory API</description>
   <url>${github.url.base}/${project.artifactId}</url>
